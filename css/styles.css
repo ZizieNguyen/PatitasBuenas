@@ -1,0 +1,115 @@
+/* 1. Variables corporativas (:root) */
+:root {
+  --color-primario: #9e432a;         /* Marrón tierra principal */
+  --color-primario-hover: #7e341f;   /* Marrón oscuro para hover */
+  --color-primario-suave: rgba(158, 67, 42, 0.12); /* 12% opacidad para fondos */
+  --color-fondo: #f8fafc;
+  --color-borde: #e2e8f0;
+}
+
+/* 2. Reglas base */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 3. Componentes Repetitivos: HEADER & LOGO */
+.header-principal {
+  background-color: #ffffff;
+  border-bottom: 2px solid var(--color-borde);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.logo-bloque {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logo-icono {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: var(--color-primario-suave);
+  color: var(--color-primario);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.logo-bloque:hover .logo-icono {
+  transform: scale(1.05);
+}
+
+.logo-titulo {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-primario);
+  line-height: 1.1;
+  font-family: 'Outfit', sans-serif;
+}
+
+.logo-subtitulo {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* 4. Componentes Repetitivos: NAVEGACIÓN */
+.nav-enlace {
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.nav-enlace:hover {
+  color: var(--color-primario);
+}
+
+.nav-enlace.activo {
+  color: var(--color-primario);
+  border-bottom-color: var(--color-primario);
+  font-weight: 700;
+}
+
+/* 5. Componentes Repetitivos: BOTONES */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.35rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-primario {
+  background-color: var(--color-primario);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(158, 67, 42, 0.25);
+}
+
+.btn-primario:hover {
+  background-color: var(--color-primario-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(158, 67, 42, 0.3);
+}
+
+.btn-primario:active {
+  transform: scale(0.98);
+}
