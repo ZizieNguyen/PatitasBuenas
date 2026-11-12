@@ -1,115 +1,177 @@
-/* 1. Variables corporativas (:root) */
 :root {
-  --color-primario: #9e432a;         /* Marrón tierra principal */
-  --color-primario-hover: #7e341f;   /* Marrón oscuro para hover */
-  --color-primario-suave: rgba(158, 67, 42, 0.12); /* 12% opacidad para fondos */
-  --color-fondo: #f8fafc;
-  --color-borde: #e2e8f0;
+  --primary: #9e432a;
+  --hover: #7e341f;
+  --muted: #64748b;
 }
 
-/* 2. Reglas base */
-html {
-  scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
 }
 
-/* 3. Componentes Repetitivos: HEADER & LOGO */
-.header-principal {
-  background-color: #ffffff;
-  border-bottom: 2px solid var(--color-borde);
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
 
-.logo-bloque {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  text-decoration: none;
-}
-
-.logo-icono {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background-color: var(--color-primario-suave);
-  color: var(--color-primario);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.2s ease;
-}
-
-.logo-bloque:hover .logo-icono {
-  transform: scale(1.05);
-}
-
-.logo-titulo {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: var(--color-primario);
-  line-height: 1.1;
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f3fbff;
+  color: #263238;
   font-family: 'Outfit', sans-serif;
 }
 
-.logo-subtitulo {
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: #64748b;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+main {
+  margin: 0 50px;
 }
 
-/* 4. Componentes Repetitivos: NAVEGACIÓN */
-.nav-enlace {
-  color: #64748b;
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding-bottom: 0.25rem;
-  border-bottom: 2px solid transparent;
-  transition: all 0.2s ease;
+a {
   text-decoration: none;
 }
 
-.nav-enlace:hover {
-  color: var(--color-primario);
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--line);
 }
 
-.nav-enlace.activo {
-  color: var(--color-primario);
-  border-bottom-color: var(--color-primario);
-  font-weight: 700;
+
+.barra-header {
+  width: 100%;
+  min-height: 58px;
+  padding: 6px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* 5. Componentes Repetitivos: BOTONES */
-.btn {
-  display: inline-flex;
+.logo {
+  display: flex;
+  align-items: center;
+  color: var(--primary);
+}
+
+.logo-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  padding: 0.625rem 1.35rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
+}
+
+.logo h3,
+.logo p {
+  display: block;
+  margin: 0;
+}
+
+.logo h3 {
+  font-size: 15px;
   font-weight: 700;
-  cursor: pointer;
-  border: none;
-  transition: all 0.2s ease;
-  text-decoration: none;
 }
 
-.btn-primario {
-  background-color: var(--color-primario);
+.logo p {
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+
+.nav-menu a {
+  padding-bottom: 3px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.nav-menu a:hover,
+.nav-menu .active {
+  color: var(--primary);
+}
+
+.nav-menu .active {
+  border-bottom: 2px solid var(--primary);
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  margin: 24px auto 30px;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 0;
+}
+
+.hero .card-img-end {
+  width: 50%;
+  object-fit: cover;
+}
+
+.tag {
+  color: #369d76;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.hero .card-body {
+  align-self: center;
+  padding: 42px;
+}
+
+.hero .card-title {
+  margin: 9px 0;
+  color: var(--primary);
+  font-size: 34px;
+}
+
+.hero .card-text {
+  max-width: 430px;
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 0 20px;
+  }
+
+  .hero {
+    display: block;
+    min-height: 0;
+  }
+
+  .hero .card-body {
+    padding: 28px;
+  }
+
+  .hero .card-img-end {
+    width: 100%;
+    height: 230px;
+  }
+}
+
+.button {
+  background: var(--primary);
+  border-color: var(--primary);
   color: #ffffff;
-  box-shadow: 0 2px 4px rgba(158, 67, 42, 0.25);
 }
 
-.btn-primario:hover {
-  background-color: var(--color-primario-hover);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(158, 67, 42, 0.3);
+.button:hover {
+  background: var(--hover);
+  border-color: var(--hover);
+  color: #ffffff;
 }
 
-.btn-primario:active {
-  transform: scale(0.98);
+.button-outline {
+  background: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.button-outline:hover {
+  background: rgba(158, 67, 42, 0.1);
+  color: var(--primary);
 }
