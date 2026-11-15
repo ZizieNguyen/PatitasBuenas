@@ -1,16 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Galería</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <a href="../index.html" class="logo">
+            <div class="logo-icon">
+                <span class="material-symbols-outlined">pets</span>
+            </div>
+            <div class="logo-text">
+                <h3>Patitas Buenas</h3>
+                <p>Adopta - Cuida - Quiere</p>
+            </div>
+        </a>
+
+        <nav class="nav-menu">
+            <a href="../index.html">Inicio</a>
+            <a href="adopciones.html">Adopción</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a class="active" href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <a href="pages/contacto.html" class="btn button rounded-pill">Donar</a>
+    </header>
+
+    <main class="galeria-page">
+        <section class="page-header">
+            <p class="subtitle">ENCUENTRA A TU NUEVO COMPAÑERO</p>
+            <h1>Nuestros amigos</h1>
+            <p class="text-center">Descubre a nuestros adorables amigos peludos que buscan un hogar lleno de amor y cuidado.</p>
+        </section>
+        <section class="galeria d-flex flex-wrap justify-content-center gap-10">
+            <div class="card" style="max-width: 320px">
+                <img src="../img/gato02.jpg" class="card-img-top" alt="Milo">
+                <div class="card-body">
+                    <div class="card-heading">
+                        <h4 class="card-title">Milo</h4>
+                        <span class="tag rounded-pill">3 años</span>
+                    </div>
+                    <p class="card-text">Sociable, tranquilo y cariñoso; disfruta de las caricias.</p>
+                    <a class="icon-link icon-link-hover" href="#">
+                        Adóptame
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                            <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="max-width: 320px">
+                <img src="../img/perro02.jpg" class="card-img-top" alt="Toby">
+                <div class="card-body">
+                    <div class="card-heading">
+                        <h4 class="card-title">Toby</h4>
+                        <span class="tag rounded-pill">5 años</span>
+                    </div>
+                    <p class="card-text">Activo, cariñoso y juguetón; necesita espacio para disfrutar.</p>
+                    <a class="icon-link icon-link-hover" href="#">
+                        Adóptame
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                            <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="max-width: 320px">
+                <img src="../img/gato03.jpg" class="card-img-top" alt="Luna">
+                <div class="card-body">
+                    <div class="card-heading">
+                        <h4 class="card-title">Luna</h4>
+                        <span class="tag rounded-pill">2 años</span>
+                    </div>
+                    <p class="card-text">Cariñosa, tranquila y muy mimosa; disfruta de la calma y las caricias.</p>
+                    <a class="icon-link icon-link-hover" href="#">Adóptame</a>
+                </div>
+            </div>
+            <div class="card" style="max-width: 320px">
+                <img src="../img/perro03.jpg" class="card-img-top" alt="Bruno">
+                <div class="card-body">
+                    <div class="card-heading">
+                        <h4 class="card-title">Bruno</h4>
+                        <span class="tag rounded-pill">4 años</span>
+                    </div>
+                    <p class="card-text">Noble, alegre y juguetón; disfruta de los paseos y la compañía.</p>
+                    <a class="icon-link icon-link-hover" href="#">Adóptame</a>
+                </div>
+            </div>
+            <div class="card" style="max-width: 320px">
+                <img src="../img/chinchilla.jpg" class="card-img-top" alt="Nube">
+                <div class="card-body">
+                    <div class="card-heading">
+                        <h4 class="card-title">Nube</h4>
+                        <span class="tag rounded-pill">1 año</span>
+                    </div>
+                    <p class="card-text">Dulce, curiosa y activa; necesita un hogar tranquilo y paciente.</p>
+                    <a class="icon-link icon-link-hover" href="#">Adóptame</a>
+                </div>
+            </div>
+            <div class="card" style="max-width: 320px">
+                <img src="../img/pajaro.avif" class="card-img-top" alt="Pipo">
+                <div class="card-body">
+                    <div class="card-heading">
+                        <h4 class="card-title">Pipo</h4>
+                        <span class="tag rounded-pill">3 años</span>
+                    </div>
+                    <p class="card-text">Alegre, curioso y delicado; disfruta de un entorno tranquilo.</p>
+                    <a class="icon-link icon-link-hover" href="#">Adóptame</a>
+                </div>
+            </div>
+            <div class="card" style="max-width: 320px">
+                <img src="../img/gato01.jpg" class="card-img-top" alt="Simba">
+                <div class="card-body">
+                    <div class="card-heading">
+                        <h4 class="card-title">Simba</h4>
+                        <span class="tag rounded-pill">2 años</span>
+                    </div>
+                    <p class="card-text">Dulce, curioso y tranquilo; se adapta bien a la vida en familia.</p>
+                    <a class="icon-link icon-link-hover" href="#">Adóptame</a>
+                </div>
+            </div>
+            <div class="card" style="max-width: 320px">
+                <img src="../img/perro01.jpg" class="card-img-top" alt="Max">
+                <div class="card-body">
+                    <div class="card-heading">
+                        <h4 class="card-title">Max</h4>
+                        <span class="tag rounded-pill">6 años</span>
+                    </div>
+                    <p class="card-text">Fiel, juguetón y cariñoso; disfruta de los paseos y los juegos.</p>
+                    <a class="icon-link icon-link-hover" href="#">Adóptame</a>
+                </div>
+            </div>
+            <div class="card" style="max-width: 320px">
+                <img src="../img/hamster.jpg" class="card-img-top" alt="Max">
+                <div class="card-body">
+                    <div class="card-heading">
+                        <h4 class="card-title">Mickey</h4>
+                        <span class="tag rounded-pill">1.5 años</span>
+                    </div>
+                    <p class="card-text">Fiel, juguetón y cariñoso; disfruta de los paseos y los juegos.</p>
+                    <a class="icon-link icon-link-hover" href="#">
+                        Adóptame
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                            <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="card adoptar" style="width: 100%;">
+                <div class="card-body">
+                    <h4 class="card-title">¿Sientes una conexión especial con alguno de ellos?</h4>
+                    <p class="text-center">Cada uno tiene una historia única de superación. Consulta los requisitos de adopción o ponte en contacto con nosotros para conocerlos en persona.</p>
+                    <div class="d-flex justify-content-center gap-5">
+                        <a href="pages/adopcion.html" class="btn button rounded-pill">Adopta</a>
+                        <a href="contacto.html" class="btn button-outline rounded-pill">Contacta con nosotros</a>
+                    </div>
+                </div>                             
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-contener">
+            <div class="footer-info">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <span class="material-symbols-outlined">pets</span>
+                    </div>
+                    <div class="logo-text">
+                        <h3>Patitas Buenas</h3>
+                    </div>
+                </a>
+                <p>Asociación protectora de animales sin ánimo de lucro dedicada al rescate, cuidado y adopción
+                    responsable.</p>
+            </div>
+
+            <div class="enlacesRapidos">
+                <p>Enlaces Rapidos</p>
+                <nav>
+                    <a href="../index.html">Inicio</a>
+                    <a href="adopciones.html">Adopción</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="galeria.html">Galería</a>
+                </nav>
+            </div>
+
+            <div class="contacto">
+                <p>Contacto</p>
+                <nav>
+                    <a href="mailto:info@patitasbuenas.org">info@patitasbuenas.org</a>
+                    <a href="tel:+34000000000">+34 000 000 000</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© 2026 Patitas Buenas · Todos los derechos reservados</p>
+            <div class="legal-links">
+                <a href="" target="_blank" class="avisoLegal">Aviso Legal</a>
+                <a href="" target="_blank" class="politicaPrivacidad">Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>

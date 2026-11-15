@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">    
+    <title>Adopción</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="logo">
+            <div class="logo-icon">
+                <span class="material-symbols-outlined">pets</span>
+            </div>
+            <div class="logo-text">
+                <h3>Patitas Buenas</h3>
+                <p>Adopta - Cuida - Quiere</p>
+            </div>
+        </a>
+
+        <nav class="nav-menu">
+            <a href="../index.html">Inicio</a>
+            <a class="active" href="adopciones.html">Adopción</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <a href="pages/contacto.html" class="btn button rounded-pill">Donar</a>
+    </header>
+
+    <main class="adopion-page">
+        <section class="page-header">
+            <p class="subtitle">UN HOGAR CAMBIA DOS VIDAS</p>
+            <h1>Adopta a un compañero</h1>
+            <p class="card-center">Cada adopción en Patitas Buenas incluye protocolo veterinario completo: vacunas al día, microchip homologado, desparasitación interna y externa, y esterilización responsable</p>
+        </section>
+
+        <section class="card adoptar" style="width: 100%;">
+                <div class="card-body">
+                    <p class="card-subtitle">Paso a paso sencillo</p>
+                    <h4 class="card-title">¿Cómo adoptar?</h4>
+                    <p class="text-center">Conoce a nuestros amigos peludos, encuentra a tu compañero ideal y descubre cómo darle un hogar lleno de amor mediante una adopción responsable.</p>
+                </div> 
+                <div class="row">
+                    <div class="sm:col-4 mb-3 sm:mb-0">
+                        <div class="card">
+                            <div class="card-body card-1">
+                                <span class="tag bg-brown">1</span>
+                                <h4 class="card-title">Busca</h4>
+                                <p class="card-text">Explora nuestra galería de animales rescatados y encuentra al compañero ideal para tu hogar.</p>                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm:col-4 mb-3 sm:mb-0">
+                        <div class="card">
+                            <div class="card-body card-2">
+                                <span class="tag bg-gold">2</span>
+                                <h4 class="card-title">Contacta</h4>
+                                <p class="card-text">Escríbenos para concertar una visita en el refugio o casa de acogida y conoceros en persona.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm:col-4">
+                        <div class="card">
+                            <div class="card-body card-3">
+                                <span class="tag bg-green">3</span>
+                                <h4 class="card-title">Adopta</h4>
+                                <p class="card-text">Formaliza el contrato de adopción responsable con chip, vacunas y cartilla para comenzar su nueva vida.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                            
+        </section>
+
+        <section class="adopcion-form card" aria-labelledby="formulario-adopcion-titulo">
+            <h2 class="title">Formulario de adopción</h2>
+            <p>Sin compromiso. Responderemos a tu solicitud en un plazo de 24 a 48 horas.</p>
+            <form>
+                <div class="mb-3">
+                    <label for="animal" class="form-label">¿A qué compañero quieres adoptar?</label>
+                    <input type="select" name="animal" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="animal" class="form-label">Nombre y apellidos</label>
+                    <input type="select" name="animal" class="form-control" placeholder="Tu nombre completo">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" placeholder="tu@email.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Teléfono</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="motivacion" class="form-label">Breve motivación o dudas</label>
+                    <textarea class="form-control" rows="3" name="motivacion" placeholder="Escribe aquí tu motivación o dudas..."></textarea>
+                </div>
+                <div class="mb-3 form-field">
+                    <input type="checkbox" id="exampleCheck1" class="check">
+                    <label for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn-solid theme-primary">Submit</button>
+            </form>
+            
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-contener">
+            <div class="footer-info">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <span class="material-symbols-outlined">pets</span>
+                    </div>
+                    <div class="logo-text">
+                        <h3>Patitas Buenas</h3>
+                    </div>
+                </a>
+                <p>Asociación protectora de animales sin ánimo de lucro dedicada al rescate, cuidado y adopción
+                    responsable.</p>
+            </div>
+
+            <div class="enlacesRapidos">
+                <p>Enlaces Rapidos</p>
+                <nav>
+                    <a href="../index.html">Inicio</a>
+                    <a href="adopciones.html">Adopción</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="galeria.html">Galería</a>
+                </nav>
+            </div>
+
+            <div class="contacto">
+                <p>Contacto</p>
+                <nav>
+                    <a href="mailto:info@patitasbuenas.org">info@patitasbuenas.org</a>
+                    <a href="tel:+34000000000">+34 000 000 000</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© 2026 Patitas Buenas · Todos los derechos reservados</p>
+            <div class="legal-links">
+                <a href="" target="_blank" class="avisoLegal">Aviso Legal</a>
+                <a href="" target="_blank" class="politicaPrivacidad">Privacidad</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

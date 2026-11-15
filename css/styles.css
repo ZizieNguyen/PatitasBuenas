@@ -134,10 +134,34 @@ a {
   color: var(--muted);
 }
 
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.page-header .subtitle {
+  margin: 0;
+  color: #369d76;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.page-header h1 {
+  color: var(--primary);
+  font-size: 34px;
+}
+
 
 @media (max-width: 768px) {
   main {
     margin: 0 20px;
+  }
+
+  .adopcion-form {
+    padding: 24px;
   }
 
   .hero {
@@ -257,7 +281,7 @@ a {
 }
 
 .adoptar {
-  background-color: #dff3fd;
+  background-color: #e1f3fc;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -325,6 +349,8 @@ a {
 .adoptar .tag.bg-brown {
   background-color: #8b4513;
 }
+
+
 
 .help {
   display: flex;
@@ -419,4 +445,37 @@ a {
 .legal-links {
   display: flex;
   gap: 10px;
+}
+
+
+
+/* PÁGINA DE GALERÍA */
+
+.galeria-page .adoptar .card-body {
+  gap: 20px;
+}
+
+/* PÁGINA DE ADOPCIÓN */
+
+.adopcion-form {
+  max-width: 760px;
+  margin: 30px auto;
+  padding: 30px;
+}
+
+.adopcion-form .title {
+  color: black;
+  font-size: 24px;
+}
+
+.adopcion-form p,
+.adopcion-form label {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+input,
+textarea {
+  background-color: #e1f3fc;
+  border: none;
 }
