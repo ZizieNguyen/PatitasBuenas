@@ -20,6 +20,7 @@ body {
 
 main {
   margin: 0 100px;
+  text-align: justify;
 }
 
 section {
@@ -155,30 +156,6 @@ a {
 }
 
 
-@media (max-width: 768px) {
-  main {
-    margin: 0 20px;
-  }
-
-  .adopcion-form {
-    padding: 24px;
-  }
-
-  .hero {
-    display: block;
-    min-height: 0;
-  }
-
-  .hero .card-body {
-    padding: 28px;
-  }
-
-  .hero .card-img-end {
-    width: 100%;
-    height: 230px;
-  }
-}
-
 .button {
   background: var(--primary);
   border-color: var(--primary);
@@ -242,7 +219,9 @@ a {
   color: black;
 }
 
-
+.galeria .carousel {
+    --bs-carousel-items: 3
+  }
 
 .galeria button {
   margin: 0;
@@ -285,8 +264,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: center;  
 }
 
 .adoptar .card-body {
@@ -349,8 +327,6 @@ a {
 .adoptar .tag.bg-brown {
   background-color: #8b4513;
 }
-
-
 
 .help {
   display: flex;
@@ -445,6 +421,59 @@ a {
 .legal-links {
   display: flex;
   gap: 10px;
+}
+
+@media (max-width: 1024px) {
+    .galeria .carousel {
+    --bs-carousel-items: 3 !important;
+  }
+  }
+
+
+@media (max-width: 768px) {
+  main {
+    margin: 0 20px;
+  }
+
+  .adopcion-form {
+    padding: 24px;
+  }
+
+  .hero {
+    display: block;
+    min-height: 0;
+    height: 100%;
+  }
+
+  .hero .card-body {
+    padding: 20px;
+  }
+
+  .hero .card-img-end {
+    width: 100%;
+    height: 230px;
+  }
+
+  .help {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .help .card-body {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .galeria .carousel {
+    --bs-carousel-items: 2 !important;
+  }
+
+  @media (max-width: 576px) {
+    .galeria .carousel {
+    --bs-carousel-items: 1 !important;
+    
+  }
+  }
 }
 
 
