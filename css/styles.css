@@ -177,13 +177,13 @@ a {
     width: 100%;
     height: 230px;
   }
-
 }
 
 .button {
   background: var(--primary);
   border-color: var(--primary);
   color: #ffffff;
+  font-size: 15px;
 }
 
 .button:hover {
@@ -458,24 +458,143 @@ a {
 /* PÁGINA DE ADOPCIÓN */
 
 .adopcion-form {
+  display: flex;
+  flex-direction: column;
   max-width: 760px;
   margin: 30px auto;
-  padding: 30px;
+  padding: 40px;
+  gap: 20px;
 }
+
+.adopcion-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 
 .adopcion-form .title {
   color: black;
   font-size: 24px;
 }
 
-.adopcion-form p,
-.adopcion-form label {
+.adopcion-form p {
   font-size: 12px;
   color: var(--muted);
 }
 
-input,
-textarea {
-  background-color: #e1f3fc;
-  border: none;
+.adopcion-form label {
+  color: black;
+  font-size: 12px;
 }
+
+.adopcion-form input,
+.adopcion-form textarea,
+.adopcion-form select {
+  max-width: 100%;
+  min-width: 0;
+  background-color: #ffffff;
+  border: none;
+  color: var(--muted);
+  border-bottom: 1px solid rgb(238, 236, 236);
+}
+
+.adopcion-form .form-help {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.adopcion-form input::placeholder,
+.adopcion-form textarea::placeholder {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.adopcion-form select:invalid {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.adopcion-form .obligatorio {
+  color: red;
+}
+
+.adopcion-form .check-container {
+  display: flex;
+  align-items: center;
+}
+
+.adopcion-form .check {
+  border: 1px solid rgb(238, 236, 236);
+  margin: 0;
+  
+}
+
+.adopcion-form .button {
+  align-self: center;
+}
+
+/* PÁGINA DE NOSOTROS */
+.about {
+  height: 100%;
+}
+
+.about .card-img-start {
+  width: 50%;
+  object-fit: cover;
+  padding: 50px 30px;
+}
+
+.about .card-body {
+  min-width: 0;
+  border-left: none;
+
+}
+
+.about .card-title {
+  font-size: 24px;
+}
+
+.about .card-text {
+  max-width: 80%;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.about .indicators {
+  display: flex;
+  gap: 20px;
+}
+
+.about .indicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about .indicator p {
+  margin: 0;
+}
+
+.about .text-small {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.red {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.green {
+  color: green;
+  font-weight: 700;
+}
+
+
+
+
+
+
