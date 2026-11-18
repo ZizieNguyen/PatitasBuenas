@@ -20,8 +20,8 @@
     <header class="header w-100">
         <nav class="navbar md:navbar-expand bg-transparent w-100">
             <div class="container-fluid d-flex align-items-center justify-content-center">
-            <a href="../index.html" class="logo">
-                <div class="logo-icon">
+            <a class="navbar-brand logo" href="../index.html">
+                <div class="logo-icon d-flex align-items-center">
                     <span class="material-symbols-outlined">pets</span>
                 </div>
                 <div class="logo-text">
@@ -32,7 +32,7 @@
             <button class="btn-icon navbar-toggler bg-transparent ms-auto align-self-center" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir navegación">
                 <span class="material-symbols-outlined navbar-toggler-icon" aria-hidden="true">menu</span>
             </button>
-            <dialog class="drawer bg-white drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+            <dialog class="drawer bg-white drawer-end" style="max-height: 40vh;" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
                 <div class="drawer-header">
                     <h5 class="drawer-title" id="navbarNavLabel">Menú</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Cerrar navegación"></button>
@@ -59,8 +59,8 @@
                 día, microchip homologado, desparasitación interna y externa, y esterilización responsable</p>
         </section>
 
-        <section class="card adoptar" style="width: 100%;">
-            <div class="card-body">
+        <section class="card adoptar d-flex flex-column align-items-center" style="width: 100%;">
+            <div class="card-body d-flex flex-column align-items-center text-center">
                 <p class="card-subtitle">Paso a paso sencillo</p>
                 <h4 class="card-title">¿Cómo adoptar?</h4>
                 <p class="text-center">Conoce a nuestros amigos peludos, encuentra a tu compañero ideal y descubre cómo
@@ -192,8 +192,8 @@
         <div class="footer-bottom d-flex flex-column md:flex-row justify-content-between align-items-center">
             <p class="copyright">© 2026 Patitas Buenas · Todos los derechos reservados</p>
             <div class="legal-links">
-                <a href="pages/avisoLegal.html" class="avisoLegal">Aviso Legal</a>
-                <a href="pages/privacidad.html" class="politicaPrivacidad">Privacidad</a>
+                <a href="avisoLegal.html" class="avisoLegal">Aviso Legal</a>
+                <a href="privacidad.html" class="politicaPrivacidad">Privacidad</a>
             </div>
         </div>
     </footer>

@@ -20,8 +20,8 @@
     <header class="header w-100">
         <nav class="navbar md:navbar-expand bg-transparent w-100">
             <div class="container-fluid d-flex align-items-center justify-content-center">
-            <a href="../index.html" class="logo">
-                <div class="logo-icon">
+            <a class="navbar-brand logo" href="../index.html">
+                <div class="logo-icon d-flex align-items-center">
                     <span class="material-symbols-outlined">pets</span>
                 </div>
                 <div class="logo-text">
@@ -32,7 +32,7 @@
             <button class="btn-icon navbar-toggler bg-transparent ms-auto align-self-center" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir navegación">
                 <span class="material-symbols-outlined navbar-toggler-icon" aria-hidden="true">menu</span>
             </button>
-            <dialog class="drawer bg-white drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+            <dialog class="drawer bg-white drawer-end" style="max-height: 40vh;" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
                 <div class="drawer-header">
                     <h5 class="drawer-title" id="navbarNavLabel">Menú</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Cerrar navegación"></button>
@@ -59,12 +59,12 @@
                 teléfono o correo electrónico.</p>
         </section>
 
-        <section class="card contact-adopcion" style="width: 100%;">
-            <div class="card-body">
-                <div class="logo-icon">
+        <section class="card contact-adopcion d-flex flex-row" style="width: 100%;">
+            <div class="card-body d-flex flex-row">
+                <div class="logo-icon align-items-center justify-content-center d-flex">
                     <span class="logo material-symbols-outlined">pets</span>
                 </div>
-                <p class="card-text">¿Buscas adoptar a uno de nuestros animales? Accede directamente a nuestro
+                <p class="card-text d-flex align-items-center">¿Buscas adoptar a uno de nuestros animales? Accede directamente a nuestro
                     formulario oficial en Adopción.</p>
             </div>
             <a href="adopciones.html" class="btn button rounded-pill">Ir a Adopción</a>
@@ -74,7 +74,7 @@
             <div class="card">
                 <div class="card-body gap-0">
                     <h4 class="card-subtitle">TELÉFONO Y WHATSAPP</h4>
-                    <p class="card-title">+34 000 000 000</p>
+                    <a href="tel:+34000000000" class="card-title">+34 000 000 000</a>
                     <p class="card-text">Lunes a Sábado</p>
                     <p class="card-text">De 10:00 a 18:00 h</p>
                 </div>
@@ -83,7 +83,7 @@
             <div class="card">
                 <div class="card-body gap-0">
                     <h4 class="card-subtitle">CORREO ELECTRÓNICO</h4>
-                    <p class="card-title">info@patitasbuenas.org</p>
+                    <a href="mailto:info@patitasbuenas.org" class="card-title">info@patitasbuenas.org</a>
                     <p class="card-text">Atención y consultas</p>
                     <p class="card-text">Respuesta en 24-48 h</p>
                 </div>
@@ -148,8 +148,8 @@
         <div class="footer-bottom d-flex flex-column md:flex-row justify-content-between align-items-center">
             <p class="copyright">© 2026 Patitas Buenas · Todos los derechos reservados</p>
             <div class="legal-links">
-                <a href="pages/avisoLegal.html" class="avisoLegal">Aviso Legal</a>
-                <a href="pages/privacidad.html" class="politicaPrivacidad">Privacidad</a>
+                <a href="avisoLegal.html" class="avisoLegal">Aviso Legal</a>
+                <a href="privacidad.html" class="politicaPrivacidad">Privacidad</a>
             </div>
         </div>
     </footer>
