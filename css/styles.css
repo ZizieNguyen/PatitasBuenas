@@ -2,6 +2,7 @@
   --primary: #9e432a;
   --hover: #7e341f;
   --muted: #64748b;
+  --tag:#369d76;
   --white: #ffffff;
 }
 
@@ -13,12 +14,15 @@
 body {
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background: #f3fbff;
   color: var(--muted);
   font-family: 'Outfit', sans-serif;
 }
 
 main {
+  flex: 1;
   margin: 0 200px;
   text-align: justify;
 }
@@ -33,15 +37,19 @@ a {
 
 .header {
   display: flex;
-  width: 100%;
   position: sticky;
   top: 0;
+  padding: 5px 50px;
   z-index: 10;
-  padding: 6px 50px;
   align-items: center;
-  justify-content: space-between;
   background-color: var(--white);
   border-bottom: 1px solid rgb(238, 236, 236) ;
+}
+
+.btn-close,
+.drawer-title {
+  color: var(--primary);
+
 }
 
 .logo {
@@ -51,11 +59,8 @@ a {
 }
 
 .logo-icon {
-  display: flex;
   width: 44px;
   height: 44px;
-  align-items: center;
-  justify-content: center;
 }
 
 .logo h3,
@@ -75,7 +80,6 @@ a {
 
 .nav-menu {
   display: flex; 
-  flex-wrap: wrap;
   justify-content: center;
   gap: 22px;
 }
@@ -95,13 +99,20 @@ a {
   border-bottom: 2px solid var(--primary);
 }
 
+.navbar-toggler{
+  color: var(--primary);
+}
+
+.navbar-toggler:hover {
+  color: var(--muted);
+}
+
 .card {
-  background-color: #ffffff;
+  background-color: var(--white);
   border: 1px solid rgb(238, 236, 236);
 }
 
 .hero {
-  display: flex;
   width: 100%;
   height: 500px;
   overflow: hidden;
@@ -113,7 +124,7 @@ a {
 }
 
 .tag {
-  color: #369d76;
+  color: var(--tag);
   font-size: 9px;
 }
 
@@ -143,7 +154,7 @@ a {
 
 .page-header .subtitle {
   margin: 0;
-  color: #369d76;
+  color: var(--tag);
   font-size: 10px;
   text-transform: uppercase;
 }
@@ -155,14 +166,12 @@ a {
 
 .button {
   background: var(--primary);
-  border-color: var(--primary);
-  color: #ffffff;
+  color: var(--white);
   font-size: 15px;
 }
 
 .button:hover {
   background: var(--hover);
-  border-color: var(--hover);
 }
 
 .button-outline {
@@ -200,7 +209,7 @@ a {
 
 .galeria .tag {
   background-color: #e8f5ef;
-  color: #369d76;
+  color: var(--tag);
   font-size: 10px;
   font-weight: 500;
   padding: 2px 6px;
@@ -228,7 +237,6 @@ a {
   margin: 0;
   padding: 0;
   color: var(--primary);
-  background: transparent;
   border: none;
 }
 
@@ -262,16 +270,9 @@ a {
 
 .adoptar {
   background-color: #e1f3fc;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;  
 }
 
 .adoptar .card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 0;
 }
 
@@ -419,9 +420,6 @@ a {
 }
 
 .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-top: 1px solid rgb(238, 236, 236);
   font-size: 12px;
 }
@@ -612,7 +610,7 @@ a {
 @media (max-width: 1024px) {
     .galeria .carousel {
     --bs-carousel-items: 3 !important;
-  }
+    }
   }
 
 
@@ -629,8 +627,7 @@ a {
     padding: 20px;
   }
 
-  .footer-contener,
-  .footer-bottom {
+  .footer-contener {
     flex-direction: column;
     align-items: center;
   }
