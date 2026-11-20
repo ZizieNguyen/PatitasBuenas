@@ -17,10 +17,10 @@
 </head>
 
 <body>
-    <header class="header w-100">
+    <header class="header w-100 d-flex align-items-center">
         <nav class="navbar md:navbar-expand bg-transparent w-100">
             <div class="container-fluid d-flex align-items-center justify-content-center">
-                <a class="navbar-brand logo" href="index.html">
+                <a class="navbar-brand logo d-flex align-items-center" href="index.html">
                     <div class="logo-icon d-flex align-items-center">
                         <span class="material-symbols-outlined">pets</span>
                     </div>
@@ -36,14 +36,14 @@
                     <span class="material-symbols-outlined navbar-toggler-icon" aria-hidden="true">menu</span>
                 </button>
 
-                <dialog class="drawer bg-white drawer-end" style="max-height: 40vh;" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                <dialog class="drawer bg-white drawer-end" style="max-height: 50vh;" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
                     <div class="drawer-header">
                         <h5 class="drawer-title" id="navbarNavLabel">Menú</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="drawer"
                             aria-label="Cerrar navegación"></button>
                     </div>
                     <div class="drawer-body">
-                        <nav class="nav-menu flex-column md:flex-row flex-grow-1 justify-content-center">
+                        <nav class="nav-menu d-flex flex-column md:flex-row flex-grow-1 justify-content-center">
                             <a class="active" href="index.html">Inicio</a>
                             <a href="pages/adopciones.html">Adopción</a>
                             <a href="pages/galeria.html">Galería</a>
@@ -71,14 +71,14 @@
                                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                         </svg>
                     </a>
-                    <a href="pages/contacto.html" class="btn button-outline rounded-pill">¿Cómo adoptar?</a>
+                    <a href="pages/contacto.html" class="btn button-outline bg-transparent rounded-pill">¿Cómo adoptar?</a>
                 </div>
             </div>
             <img src="img/hero.avif" alt="Persona abrazando a un perro" class="card-img-end">
         </section>
 
         <section class="galeria">
-            <p class="subtitle">Ellos también sueñan con una familia.</p>
+            <p class="subtitle">ELLOS TAMBIÉN SUEÑAN CON UNA FAMILIA.</p>
             <h3>Nuestros amigos</h3>
             <div id="carouselMultiple" class="carousel slide" data-bs-ends="stop"
                 style="--bs-carousel-items: 4; --bs-carousel-items-gap: 1rem;">
@@ -293,8 +293,8 @@
         </section>
 
         <section class="card adoptar d-flex flex-column align-items-center justify-content-center" style="width: 100%;">
-            <div class="card-body d-flex flex-column align-items-center">
-                <p class="card-subtitle">Paso a paso sencillo</p>
+            <div class="card-body d-flex flex-column align-items-center gap-0">
+                <p class="card-subtitle">PASO A PASO SENCILLO</p>
                 <h4 class="card-title">¿Cómo adoptar?</h4>
                 <p class="text-center">Conoce a nuestros amigos peludos, encuentra a tu compañero ideal y descubre cómo
                     darle un hogar lleno de amor mediante una adopción responsable.</p>
@@ -333,25 +333,21 @@
             </div>
         </section>
 
-
-
-
-
-        <section class="card help d-flex flex-row align-items-center justify-content-between" style="width: 100%;">
-            <div class="card-body">
-                <p class="card-subtitle">Colabora con el refugio</p>
+        <section class="card help d-flex flex-column md:flex-row align-items-center justify-content-between" style="width: 100%;">
+            <div class="card-body d-flex flex-column justify-content-center align-items-center md:align-items-start">
+                <p class="card-subtitle">COLABORA CON EL REFUGIO</p>
                 <h4 class="card-title">¿Nos ayudas?</h4>
                 <p class="card-text">Tu donación nos permite seguir cuidando y atendiendo a cientos de peludos en
                     recuperación médica y alimentación diaria.</p>
             </div>
-            <a href="/pages/contacto.html" class="btn button rounded-pill">Hazte una donación</a>
+            <a href="/pages/contacto.html" class="btn button rounded-pill mb-5">Hazte una donación</a>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="footer-contener">
-            <div class="footer-info">
-                <a href="index.html" class="logo">
+        <div class="footer-contener d-flex flex-column md:flex-row justify-content-between align-items-center">
+            <div class="footer-info d-flex flex-column justify-content-center">
+                <a href="index.html" class="logo d-flex align-items-center">
                     <div class="logo-icon d-flex align-items-center justify-content-center">
                         <span class="material-symbols-outlined">pets</span>
                     </div>
@@ -363,10 +359,10 @@
                     responsable.</p>
             </div>
 
-            <div class="footer-links">
+            <div class="footer-links d-flex">
                 <div class="enlacesRapidos">
                     <p>Enlaces Rapidos</p>
-                    <nav>
+                    <nav class="d-flex flex-column gap-5">
                         <a href="index.html">Inicio</a>
                         <a href="pages/adopciones.html">Adopción</a>
                         <a href="pages/contacto.html">Contacto</a>
@@ -375,7 +371,7 @@
                 </div>
                 <div class="contacto">
                     <p>Contacto</p>
-                    <nav>
+                    <nav class="d-flex flex-column gap-5">
                         <a href="mailto:info@patitasbuenas.org">info@patitasbuenas.org</a>
                         <a href="tel:+34000000000">+34 000 000 000</a>
                     </nav>
@@ -384,8 +380,8 @@
         </div>
 
         <div class="footer-bottom d-flex flex-column md:flex-row justify-content-between align-items-center">
-            <p class="copyright">© 2026 Patitas Buenas · Todos los derechos reservados</p>
-            <div class="legal-links">
+            <p class="copyright m-0">© 2026 Patitas Buenas · Todos los derechos reservados</p>
+            <div class="legal-links d-flex gap-10">
                 <a href="pages/avisoLegal.html" class="avisoLegal">Aviso Legal</a>
                 <a href="pages/privacidad.html" class="politicaPrivacidad">Privacidad</a>
             </div>
