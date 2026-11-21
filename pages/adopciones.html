@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +25,7 @@
                     <span class="material-symbols-outlined">pets</span>
                 </div>
                 <div class="logo-text">
-                    <h3>Patitas Buenas</h3>
+                    <p class="logo-name">Patitas Buenas</p>
                     <p>Adopta - Cuida - Quiere</p>
                 </div>
             </a>
@@ -34,7 +34,7 @@
             </button>
             <dialog class="drawer bg-white drawer-end" style="max-height: 50vh;" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
                 <div class="drawer-header">
-                    <h5 class="drawer-title" id="navbarNavLabel">Menú</h5>
+                    <h4 class="drawer-title" id="navbarNavLabel">Menú</h4>
                     <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Cerrar navegación"></button>
                 </div>
                 <div class="drawer-body">
@@ -62,7 +62,7 @@
         <section class="card adoptar d-flex flex-column align-items-center" style="width: 100%;">
             <div class="card-body d-flex flex-column align-items-center text-center">
                 <p class="card-subtitle">Paso a paso sencillo</p>
-                <h4 class="card-title">¿Cómo adoptar?</h4>
+                <h2 class="card-title">¿Cómo adoptar?</h2>
                 <p class="text-center">Conoce a nuestros amigos peludos, encuentra a tu compañero ideal y descubre cómo
                     darle un hogar lleno de amor mediante una adopción responsable.</p>
             </div>
@@ -71,7 +71,7 @@
                     <div class="card">
                         <div class="card-body card-1">
                             <span class="tag bg-brown">1</span>
-                            <h4 class="card-title">Busca</h4>
+                            <h3 class="card-title">Busca</h3>
                             <p class="card-text">Explora nuestra galería de animales rescatados y encuentra al compañero
                                 ideal para tu hogar.</p>
                         </div>
@@ -81,7 +81,7 @@
                     <div class="card">
                         <div class="card-body card-2">
                             <span class="tag bg-gold">2</span>
-                            <h4 class="card-title">Contacta</h4>
+                            <h3 class="card-title">Contacta</h3>
                             <p class="card-text">Escríbenos para concertar una visita en el refugio o casa de acogida y
                                 conoceros en persona.</p>
                         </div>
@@ -91,7 +91,7 @@
                     <div class="card">
                         <div class="card-body card-3">
                             <span class="tag bg-green">3</span>
-                            <h4 class="card-title">Adopta</h4>
+                            <h3 class="card-title">Adopta</h3>
                             <p class="card-text">Formaliza el contrato de adopción responsable con chip, vacunas y
                                 cartilla para comenzar su nueva vida.</p>
                         </div>
@@ -127,25 +127,25 @@
                     </select>
                 </div>
                 <div class="mb-5 form-field">
-                    <label for="animal" class="form-label">Nombre y apellidos <span class="obligatorio">*</span></label>
-                    <input type="select" name="animal" class="" placeholder="Tu nombre completo" requiered>
+                    <label for="nombre" class="form-label">Nombre y apellidos <span class="obligatorio">*</span></label>
+                    <input id="nombre" type="text" name="nombre" class="" placeholder="Tu nombre completo" required>
                 </div>
                 <div class="mb-5 form-field">
                     <label for="email" class="form-label">Email <span class="obligatorio">*</span></label>
-                    <input type="email" name="email" class="" placeholder="tu@email.com" requiered>
+                    <input id="email" type="email" name="email" class="" placeholder="tu@email.com" required>
                 </div>
                 <div class="mb-5 form-field">
                     <label for="telefono" class="form-label">Teléfono <span class="obligatorio">*</span></label>
-                    <input type="phone" name="telefono" class="">
+                    <input id="telefono" type="tel" name="telefono" class="" required>
                 </div>
                 <div class="mb-5 form-field">
                     <label for="motivacion" class="form-label">Breve motivación o dudas <span class="obligatorio">*</span></label>
-                    <textarea class="form-control" rows="3" name="motivacion"
+                    <textarea id="motivacion" class="form-control" rows="3" name="motivacion"
                         placeholder="Escribe aquí tu motivación o dudas..." maxlength="500" required></textarea>
                     <p class="form-help d-flex justify-content-end">Máximo 500 caracteres.</p>
                 </div>
                 <div class="mb-5 form-field d-flex align-items-center check-container">
-                    <input id="check" type="checkbox" name="aceptar" class="check theme-inverse" required>
+                    <input id="aceptar" type="checkbox" name="aceptar" class="check theme-inverse" required>
                     <label for="aceptar">He leído y acepto los términos de adopción responsable y la política de protección de datos. <span class="obligatorio">*</span></label>
                 </div>
                 <button type="submit" class="btn button rounded-pill">Submit</button>
@@ -162,7 +162,7 @@
                         <span class="material-symbols-outlined">pets</span>
                     </div>
                     <div class="logo-text">
-                        <h3>Patitas Buenas</h3>
+                        <p class="logo-name">Patitas Buenas</p>
                     </div>
                 </a>
                 <p>Asociación protectora de animales sin ánimo de lucro dedicada al rescate, cuidado y adopción

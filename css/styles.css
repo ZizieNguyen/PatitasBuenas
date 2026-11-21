@@ -58,13 +58,13 @@ a {
   height: 44px;
 }
 
-.logo h3,
+.logo-name,
 .logo p {
   margin: 0;
 }
 
-.logo h3 {
-  font-size: 15px;
+.logo-name {
+  font-size: 14px;
   font-weight: 700;
 }
 
