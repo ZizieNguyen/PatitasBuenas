@@ -490,15 +490,6 @@ a {
   border-radius: 10px;
 }
 
-
-
-@media (max-width: 1024px) {
-    .galeria .carousel {
-    --bs-carousel-items: 3 !important;
-    }
-  }
-
-
 @media (max-width: 768px) {
   main {
     margin: 0 20px;
